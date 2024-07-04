@@ -1,9 +1,9 @@
-import List from "./List.jsx"
+import Button from "./Button"
 
 function App() {
   return (
     <>
-    <List></List>
+    <Button></Button>
     </>
   );
 }
