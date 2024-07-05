@@ -1,9 +1,10 @@
-import Button from "./Button"
+import ColorPicker from "./ColorPicker";
+
 
 function App() {
   return (
     <>
-    <Button></Button>
+    <ColorPicker></ColorPicker>
     </>
   );
 }
