@@ -1,0 +1,15 @@
+.to-do-list {
+    background-color: red;
+}
+
+.tasks {
+    background-color: rgb(215, 240, 215);
+    list-style: none;
+}
+
+.tasks li {
+    margin-top: 4px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
