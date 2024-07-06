@@ -14,9 +14,7 @@
 }
 
 .to-do-list .add-task {
-    border: none;
     border-radius: 5px;
-    border: 1px solid black;
     padding: 10px;
     background-color: rgb(254, 254, 255);
 }
@@ -36,18 +34,23 @@
     margin-top: 4px;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(240, 220, 220);
+    background-color: rgb(255, 255, 255);
     align-items: flex-start;
 }
 
 .tasks li span {
     width: auto;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.676);
 }
 
 .tasks li button {
     border: none;
     background-color: transparent;
+}
+
+.options {
+    display: flex;
 }

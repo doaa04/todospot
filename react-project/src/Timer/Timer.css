@@ -1,0 +1,18 @@
+.timer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.display {
+    font-family: monospace;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.676);;
+}
+
+.controls button {
+    border: none;
+    background-color: transparent;
+    font-size: large;
+}

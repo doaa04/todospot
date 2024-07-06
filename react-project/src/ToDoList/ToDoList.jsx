@@ -24,19 +24,22 @@ function ToDoList() {
     return (
         <>
         <div className="to-do-list">
-            <h2>To Do List</h2>
+            <p><b>time spent: </b ><span style={{fontFamily:"monospace", fontSize: '16px'}}>00:00:00</span></p>
+            <p><b>tasks to complete: </b>{tasks.length}</p>
             <div className="add-task">
                 <input type="text" name="" id="" placeholder="enter a task" value={newTask} onChange={handleInputChange}/>
                 <button className="add-button" onClick={addTask}>➕</button>
             </div>
         </div>
 
-        <h3>you have {tasks.length} tasks</h3>
         <ul className="tasks">
             {tasks.map((task, index) => 
                 <li key={index}>
                     <span className="text">{task}</span>
-                    <button className="delete-button" onClick={() => deleteTask(index)}>❌</button>
+                    <div className="options">
+                        <button className="delete-button" onClick={() => deleteTask(index)}>❌</button>
+                        <button className="mark-as-done">✔️</button>
+                    </div>
                 </li>
             )}
         </ul>

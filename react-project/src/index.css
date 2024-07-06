@@ -1,6 +1,16 @@
 body {
-    background-color: rgba(176, 175, 175, 0.233);
+    background-color: rgba(241, 241, 241, 0.301);
     padding-left: 20px;
     padding-right: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.676);;
+}
+
+button {
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
