@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from "react"
 import "./Timer.css";
 
-function Timer() {
+function Timer({color}) {
     const [isRunning, setIsRunning] = useState(false);
     const [elapsedTime, setElapsedTime] = useState(0);
     const intervalIdRef = useRef(null);
@@ -49,7 +49,7 @@ function Timer() {
 
     return (
         <div className="timer">
-            <div className="display">
+            <div className="display" style={{color: color}}>
                 {formatTime()}
             </div>
             <div className="controls">

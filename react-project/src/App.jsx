@@ -1,15 +1,17 @@
-import ColorPicker from "./ColorPicker";
+import React, { useState } from "react";
+import ColorPicker from "./assets/ColorPicker/ColorPicker";
 import ToDoList from "./ToDoList/ToDoList";
 import Timer from "./Timer/Timer";
 
 function App() {
+  const [color, setColor] = useState("#ffffff"); 
   return (
     <>
-    <ColorPicker></ColorPicker>
+    <ColorPicker color={color} setColor={setColor}></ColorPicker>
     <hr />
-    <Timer></Timer>
+    <Timer color={color}></Timer>
     <hr />
-    <ToDoList></ToDoList>
+    <ToDoList color={color}></ToDoList>
     <hr />
     </>
   );
