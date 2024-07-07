@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faCheck, faXmark, faRotate } from "@fortawesome/free-solid-svg-icons"; 
 
 function ToDoList({color, color2}) {
-    const [tasks, setTasks] = useState(["résumé cours optique, cristallographie", "révision qcm quantique"]);
+    const [tasks, setTasks] = useState([]);
     const [newTask, setNewTask] = useState("");
-    const [completedTasks, setCompletedTasks] = useState(["done"]);
+    const [completedTasks, setCompletedTasks] = useState([]);
 
     function handleInputChange(event) {
         setNewTask(event.target.value);
