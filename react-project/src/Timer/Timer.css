@@ -14,5 +14,5 @@
 .controls button {
     border: none;
     background-color: transparent;
-    font-size: large;
+    margin: 2px;
 }

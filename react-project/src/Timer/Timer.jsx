@@ -1,5 +1,7 @@
 import React, {useState, useEffect, useRef} from "react"
 import "./Timer.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlay, faStop, faPause } from "@fortawesome/free-solid-svg-icons"; 
 
 function Timer({color}) {
     const [isRunning, setIsRunning] = useState(false);
@@ -49,13 +51,13 @@ function Timer({color}) {
 
     return (
         <div className="timer">
-            <div className="display" style={{color: color}}>
+            <div className="display">
                 {formatTime()}
             </div>
             <div className="controls">
-                <button className="start-button" onClick={start}>▶️</button>
-                <button className="stop-button" onClick={stop}>⏯️</button>
-                <button className="reset-button" onClick={reset}>⏹️</button>
+                <button className="start-button" onClick={start}><FontAwesomeIcon icon={faPlay} style={{color: color}}/></button>
+                <button className="stop-button" onClick={stop}><FontAwesomeIcon icon={faPause} style={{color: color}}/></button>
+                <button className="reset-button" onClick={reset}><FontAwesomeIcon icon={faStop} style={{color: color}}/></button>
             </div>
         </div>
     );

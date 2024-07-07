@@ -4,18 +4,22 @@ import ToDoList from "./ToDoList/ToDoList";
 import Timer from "./Timer/Timer";
 
 function App() {
-  const [color, setColor] = useState("#ffffff"); 
+  const [color, setColor] = useState("#249489"); 
+  const [color2, setColor2] = useState("");
+
   return (
     <>
-    <ColorPicker color={color} setColor={setColor}></ColorPicker>
-    <hr />
-    <Timer color={color}></Timer>
-    <hr />
-    <ToDoList color={color}></ToDoList>
-    <hr />
+      <div className="style-settings">
+        <ColorPicker color={color} setColor={setColor} />
+        <ColorPicker color={color2} setColor={setColor2} />
+      </div>
+      <hr />
+      <Timer color={color} />
+      <hr />
+      <ToDoList color={color} color2={color2} />
+      <hr />
     </>
   );
 }
-
 
 export default App
