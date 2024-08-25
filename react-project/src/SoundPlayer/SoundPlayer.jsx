@@ -7,14 +7,7 @@ function SoundPlayer({color}) {
     const [isPlaying, setIsPlaying] = useState(false);
     const audioRef = useRef(null);
     const tracks = [
-        {id: 1, title: 'hazaa al balushe sourate al hijr', src: 'src/assets/quran/halhijr.mp3'},
-        {id: 2, title: 'hazaa al balushe sourate al kahf', src: 'src/assets/quran/alkahf.mp3'},
-        {id: 3, title: 'hazaa al balushe sourate youssef', src: 'src/assets/quran/youssef.mp3'},
-        {id: 4, title: 'hazaa al balushe sourate as safaat', src: 'src/assets/quran/assafaat.mp3'},
-        {id: 5, title: 'hazaa al balushe sourate ibrahim', src: 'src/assets/quran/ibrahim.mp3'},
-        {id: 6, title: 'hazaa al balushe sourate an nahl', src: 'src/assets/quran/annahl.mp3'},
-        {id: 7, title: 'hazaa al balushe sourate saba', src: 'src/assets/quran/saba.mp3'},
-        {id: 8, title: 'hazaa al balushe sourate al isra', src: 'src/assets/quran/alisra.mp3'},
+        {id: 1, title: 'sound1', src: 'src/assets/playlist/sound1.mp3'},
     ];
 
     const handlePlayTrack = (trackSrc) => {
